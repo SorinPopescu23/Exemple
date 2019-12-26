@@ -1,0 +1,49 @@
+﻿@*
+    @{
+        ViewBag.Title = "About";
+    }
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Use this area to provide additional information.</p>
+*@
+
+@model IEnumerable<WebApplication1_2019.Models.Masini>
+
+@{
+    ViewBag.Title = "About";
+}
+
+<div><h2 b>Table Format Data Displaying in ForEach</h2 b><br /></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Zona)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model_masina)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) 
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Zona)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model_masina)
+                </td>
+                <td>@Html.ActionLink("Rezerva", "Rezervare", new { id = item.Id })</td>
+            </tr>
+
+        }
+</table>
