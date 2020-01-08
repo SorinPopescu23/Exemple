@@ -1,0 +1,9 @@
+Domeniul: 
+	Automobil/Inchirieri
+
+Problema pusa: 
+	O aplicatie de inchiriat masini pentu persoane care nu au o masina personala si au nevoie de una pentru a-si rezolva treburile.
+
+Functionalitati:
+	Userii dupa ce se autentifica cu datele corespunzatoare lor sunt directionati in aplicatie astfel incat sa poata vizualiza masinile,  sa se poata ei inregistra cu numele lor si sa isi creeze rezervari pe numele lor cu masina aleasa.
+	Administratorul dupa ce se autentifica este directionat in aplicatie astfel incat sa poata vedea, adauga si strge inregistrari aferente masinilor, clientilor si rezervarilor efectuaate de catre clienti. 
